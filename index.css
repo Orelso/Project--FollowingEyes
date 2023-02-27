@@ -1,0 +1,69 @@
+.container {
+    width: 90%;
+    max-width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .eyes-wrapper {
+    display: flex;
+  }
+  
+  .eye {
+    width: 10em;
+    height: 10em;
+    border: 15px solid #a6a4ad;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+  
+  .eyeball {
+    height: 3.2em;
+    width: 3.2em;
+    background: radial-gradient(#844343 35%, rgb(0, 132, 255) 37%);
+    border-radius: 50%;
+    margin: 0.2em 3.5em;
+    position: relative;
+  }
+  
+  .eyeball:before {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 0.7em;
+    width: 0.5em;
+    border-radius: 50%;
+    top: 13px;
+    left: 13px;
+    transform: rotate(45deg);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .container {
+      height: 150px;
+    }
+    
+    .eye {
+      width: 8em;
+      height: 8em;
+      border-width: 12px;
+    }
+    
+    .eyeball {
+      height: 2.8em;
+      width: 2.8em;
+      margin: 0.2em 3em;
+    }
+    
+    .eyeball:before {
+      height: 0.5em;
+      width: 0.3em;
+      top: 10px;
+      left: 10px;
+    }
+  }
+  
